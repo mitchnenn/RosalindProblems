@@ -6,6 +6,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="System.IO" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
         <Compile Include="Library.fs"/>
         <Compile Include="StringHelpers.fs" />
         <Compile Include="FileHandling.fs" />
