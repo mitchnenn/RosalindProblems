@@ -16,4 +16,8 @@
         <PackageReference Include="System.IO" Version="4.3.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj" />
+    </ItemGroup>
+
 </Project>

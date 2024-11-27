@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountDNANucleotides", "CountDNANucleotides\CountDNANucleotides.fsproj", "{847FCFF9-7981-4877-9538-5424FC659CE2}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj", "{957C570A-E5E9-4BE9-9FCC-F7C5303DFA5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

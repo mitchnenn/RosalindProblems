@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Library.fs"/>
+        <Compile Include="StringHelpers.fs" />
+        <Compile Include="FileHandling.fs" />
+        <Compile Include="NucleoBase.fs" />
+    </ItemGroup>
+
+</Project>
