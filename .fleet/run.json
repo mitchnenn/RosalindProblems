@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "dotnet-launch-settings",
+      "name": "Dotnet configuration",
+      "projectPath": "CountDNANucleotides/",
+      "profileName": "Count DNA Nucleotides",
+    },
+  ]
+}
