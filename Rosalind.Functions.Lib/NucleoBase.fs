@@ -7,4 +7,6 @@ module NucleoBase =
     let nucleoBaseNames = [|'A'; 'C'; 'G'; 'T' |]
 
     let nucleoBaseCounts path = nucleoBaseNames
-                                |> Array.map (fun baseName -> sprintf "%d " (countCharsByValue (readFromFileAndConvertToChars path) baseName))
+                                |> Array.map (fun baseName -> countCharsByValue (readFromFileAndConvertToChars path) baseName)
+                                |> Array.map string
+                                |> String.concat " "

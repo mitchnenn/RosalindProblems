@@ -4,6 +4,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountDNANucleotides", "Coun
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj", "{957C570A-E5E9-4BE9-9FCC-F7C5303DFA5E}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TranscribeDNAtoRNG", "TranscribeDNAtoRNG\TranscribeDNAtoRNG.fsproj", "{55B12310-46D6-4BAD-94D0-F85D38B6C7BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
