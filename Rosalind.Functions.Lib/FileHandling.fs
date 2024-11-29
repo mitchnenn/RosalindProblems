@@ -1,4 +1,6 @@
-namespace DefaultNamespace 
+namespace DefaultNamespace
+
+open DefaultNamespace.StringHelpers 
 
 module FileHandling = 
     open StringHelpers
@@ -9,8 +11,14 @@ module FileHandling =
     
     let readFileAndStripCR (filePath: string) =
         let fileContent = readTextFromFile filePath
-        stripCR fileContent
+        let stripped = stripCR fileContent
+        stripped.Trim()
         
     let readFromFileAndConvertToChars path = readFileAndStripCR path
                                              |> toChars
 
+
+    let readFileCharsInReverse path = readFileAndStripCR path
+                                      |> toChars
+                                      |> Array.rev
+                                      

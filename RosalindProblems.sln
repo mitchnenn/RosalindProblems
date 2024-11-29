@@ -6,6 +6,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "R
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TranscribeDNAtoRNG", "TranscribeDNAtoRNG\TranscribeDNAtoRNG.fsproj", "{55B12310-46D6-4BAD-94D0-F85D38B6C7BE}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DNACompliment", "DNACompliment\DNACompliment.fsproj", "{F65B3867-602B-49E7-B732-B7CC657F0F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -24,3 +24,14 @@ module NucleoBase =
     let rec transcribeDnaSeqToRnaSeq(inputString: string) : string =
         let result = inputString.ToCharArray() |> transcribeDnaToRna
         System.String(result)
+        
+    let complimentDna (inputArray: char array) : char array =
+        let mapping =
+            dict [
+                'A', 'T'
+                'C', 'G'
+                'G', 'C'
+                'T', 'A'
+            ]
+        inputArray |> Array.map (fun c -> mapping.[c])
+    
