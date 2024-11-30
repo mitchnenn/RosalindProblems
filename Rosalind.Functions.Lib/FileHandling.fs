@@ -1,6 +1,4 @@
-namespace DefaultNamespace
-
-open DefaultNamespace.StringHelpers 
+namespace Rosalind.Functions
 
 module FileHandling = 
     open StringHelpers

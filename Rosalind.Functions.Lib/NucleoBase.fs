@@ -1,4 +1,4 @@
-namespace DefaultNamespace
+namespace Rosalind.Functions
 
 module NucleoBase =
     open StringHelpers

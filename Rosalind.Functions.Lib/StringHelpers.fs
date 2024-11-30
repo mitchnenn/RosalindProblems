@@ -1,4 +1,4 @@
-namespace DefaultNamespace
+namespace Rosalind.Functions
 
 module StringHelpers =
     let toChars (input: string) = input.ToCharArray()

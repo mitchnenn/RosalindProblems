@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>Rosalind.Functions</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,6 +14,7 @@
         <Compile Include="StringHelpers.fs" />
         <Compile Include="FileHandling.fs" />
         <Compile Include="NucleoBase.fs" />
+        <Compile Include="DynamicSupport.fs" />
         <Compile Include="Library.fs"/>
     </ItemGroup>
 
