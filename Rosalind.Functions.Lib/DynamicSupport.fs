@@ -9,8 +9,8 @@ module DynamicSupport =
         let cache = Dictionary<_,_>()
         (fun x ->
             // The returned function performs a lookup)
-            let succ, v = cache.TryGetValue(x)
-            if succ then v else
+            let success, v = cache.TryGetValue(x)
+            if success then v else
                 // If not found calculate and cache the value
                 let v = f(x)
                 cache.Add(x, v)

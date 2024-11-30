@@ -11,7 +11,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "R
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TranscribeDNAtoRNG", "TranscribeDNAtoRNG\TranscribeDNAtoRNG.fsproj", "{9F03BC2D-6DCF-4D15-A108-80101532A0DB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecurrenceRelations", "RecurrenceRelations\RecurrenceRelations.fsproj", "{906781D8-0716-451C-B01A-B3CFEBF8AD46}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FibRabbitsNoDeaths", "FibRabbitsNoDeaths\FibRabbitsNoDeaths.fsproj", "{906781D8-0716-451C-B01A-B3CFEBF8AD46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
