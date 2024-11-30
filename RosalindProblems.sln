@@ -1,16 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountDNANucleotides", "CountDNANucleotides\CountDNANucleotides.fsproj", "{847FCFF9-7981-4877-9538-5424FC659CE2}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountDNANucleotides", "CountDNANucleotides\CountDNANucleotides.fsproj", "{2ECB920D-FF35-4E9C-9200-880969FDE3C4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj", "{957C570A-E5E9-4BE9-9FCC-F7C5303DFA5E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DNACompliment", "DNACompliment\DNACompliment.fsproj", "{BC22895D-657B-4C22-91DB-844E1E74B61F}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TranscribeDNAtoRNG", "TranscribeDNAtoRNG\TranscribeDNAtoRNG.fsproj", "{55B12310-46D6-4BAD-94D0-F85D38B6C7BE}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Rosalind.Functions.Lib", "Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj", "{DBE46F78-0A95-4BF5-97B4-09ECB44486DB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DNACompliment", "DNACompliment\DNACompliment.fsproj", "{F65B3867-602B-49E7-B732-B7CC657F0F5A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TranscribeDNAtoRNG", "TranscribeDNAtoRNG\TranscribeDNAtoRNG.fsproj", "{9F03BC2D-6DCF-4D15-A108-80101532A0DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ECB920D-FF35-4E9C-9200-880969FDE3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECB920D-FF35-4E9C-9200-880969FDE3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECB920D-FF35-4E9C-9200-880969FDE3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECB920D-FF35-4E9C-9200-880969FDE3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC22895D-657B-4C22-91DB-844E1E74B61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC22895D-657B-4C22-91DB-844E1E74B61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC22895D-657B-4C22-91DB-844E1E74B61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC22895D-657B-4C22-91DB-844E1E74B61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE46F78-0A95-4BF5-97B4-09ECB44486DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE46F78-0A95-4BF5-97B4-09ECB44486DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE46F78-0A95-4BF5-97B4-09ECB44486DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE46F78-0A95-4BF5-97B4-09ECB44486DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F03BC2D-6DCF-4D15-A108-80101532A0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F03BC2D-6DCF-4D15-A108-80101532A0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F03BC2D-6DCF-4D15-A108-80101532A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F03BC2D-6DCF-4D15-A108-80101532A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

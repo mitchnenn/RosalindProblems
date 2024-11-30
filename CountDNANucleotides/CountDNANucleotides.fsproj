@@ -3,7 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
-        <AssemblyName>CountDNANucleotides.ext</AssemblyName>
+        <AssemblyName>CountDNANucleotides.exe</AssemblyName>
         <RootNamespace>CountDNANucleotides</RootNamespace>
         <Company>1968</Company>
         <Product>Rosalind Problem - Mitch Nenn</Product>
@@ -33,4 +33,12 @@
       <ProjectReference Include="..\Rosalind.Functions.Lib\Rosalind.Functions.Lib.fsproj" />
     </ItemGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <OutputPath>bin/Debug/</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <OutputPath>bin/Release/</OutputPath>
+    </PropertyGroup>
+    
 </Project>
