@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FParsec" Version="2.0.0-beta2" />
         <PackageReference Include="System.IO" Version="4.3.0" />
     </ItemGroup>
 
@@ -16,6 +17,7 @@
         <Compile Include="NucleoBase.fs" />
         <Compile Include="DynamicSupport.fs" />
         <Compile Include="Library.fs"/>
+        <Compile Include="ParseFasta.fs" />
     </ItemGroup>
 
 </Project>
