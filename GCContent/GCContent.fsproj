@@ -7,8 +7,12 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
-    <Content Include="sample_input.fasta" />
-    <Content Include="expected_sample_output.txt" />
+    <Content Include="sample_input.fasta">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="expected_sample_output.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

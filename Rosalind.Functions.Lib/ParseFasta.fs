@@ -8,6 +8,12 @@ module ParseFasta =
     open System
     open FParsec
     
+    // Use for testing parsers.
+    let test p str =
+        match run p str with
+        | Success(result, _, _)   -> printfn $"Success: %A{result}"
+        | Failure(errorMsg, _, _) -> printfn $"Failure: %s{errorMsg}"
+         
     // Define a fasta record
     type FastaRecord = {
         Label: string
@@ -20,8 +26,7 @@ module ParseFasta =
         
     // Parse the DNA sequence
     let sequenceParser: Parser<string, unit> =
-        many (noneOf ">")
-        |>> (fun chars -> String(chars |> List.toArray))
+        manyChars (noneOf ">")
         |>> (_.Replace(Environment.NewLine, "").Trim())
     
     // Create a fasta record parser (single record)
@@ -35,11 +40,7 @@ module ParseFasta =
 
     // Parse fasta file contents with result check
     let parseFastaFile (input: string): Result<FastaRecord list, string> =
-        match run fastaFileParser input with
+        let trimmedInput = input.Trim()
+        match run fastaFileParser trimmedInput with
         | Success(result, _, _) -> Result.Ok(result)
         | Failure(errorMsg, _, _) -> Result.Error(errorMsg)
-
-    let test p str =
-        match run p str with
-        | Success(result, _, _)   -> printfn $"Success: %A{result}"
-        | Failure(errorMsg, _, _) -> printfn $"Failure: %s{errorMsg}"
