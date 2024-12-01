@@ -13,11 +13,11 @@
 
     <ItemGroup>
         <Compile Include="StringHelpers.fs" />
-        <Compile Include="FileHandling.fs" />
-        <Compile Include="NucleoBase.fs" />
         <Compile Include="DynamicSupport.fs" />
-        <Compile Include="Library.fs"/>
+        <Compile Include="FileHandling.fs" />
         <Compile Include="ParseFasta.fs" />
+        <Compile Include="NucleoBase.fs" />
+        <Compile Include="Library.fs"/>
     </ItemGroup>
 
 </Project>

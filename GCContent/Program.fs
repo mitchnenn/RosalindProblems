@@ -1,17 +1,24 @@
-﻿open System
-open Rosalind.Functions
+﻿open Rosalind.Functions.FileHandling
+open Rosalind.Functions.NucleoBase
 open Rosalind.Functions.ParseFasta
-open FParsec
-open StringHelpers
+open Rosalind.Functions.StringHelpers
 
-// Usage
-let fastaContent = """
->label1
-ATCG
->label2
-GGGGA
-"""
+let sampleContent = readTextFromFile "sample_input.fasta"
+let sampleRecords =
+    match parseFastaFile sampleContent with
+        | Result.Ok(records) -> records 
+        | Result.Error(errorMsg) -> printfn $"Fasta parse error: %s{errorMsg}"; []
+let maxSampleRecord = fastaPercentageGC sampleRecords
 
-match parseFastaFile fastaContent with
-| Result.Ok(records) -> records |> List.iter (fun record -> printfn $"Label: %s{record.Label}\nSequence: %s{record.Sequence}")
-| Result.Error(errorMsg) -> printfn $"Error parsing FASTA file: %s{errorMsg}"
+printfn $"Max Sample Label: %s{fst maxSampleRecord}"
+printfn $"Max Sample GC Content: %s{formatFloat (snd maxSampleRecord)} %%"
+
+let problemContent = readTextFromFile "problem_input.fasta"
+let problemRecords = 
+    match parseFastaFile problemContent with
+    | Result.Ok(records) -> records 
+    | Result.Error(errorMsg) -> printfn $"Fasta parse error: %s{errorMsg}"; []
+let maxProblemRecord = fastaPercentageGC problemRecords
+
+printfn $"Max Problem Label: %s{fst maxProblemRecord}"
+printfn $"Max Problem GC Content: %s{formatFloat (snd maxProblemRecord)} %%"
