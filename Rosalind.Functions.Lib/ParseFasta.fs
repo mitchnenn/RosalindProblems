@@ -27,8 +27,8 @@ module ParseFasta =
     // Parse the DNA sequence
     let sequenceParser: Parser<string, unit> =
         manyChars (noneOf ">")
-        |>> (_.Replace(Environment.NewLine, "").Trim())
-    
+        |>> _.Replace(Environment.NewLine, "").Trim()
+
     // Create a fasta record parser (single record)
     let fastaRecordParser: Parser<FastaRecord, unit> =
         labelParser .>>. sequenceParser
